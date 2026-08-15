@@ -1,0 +1,11 @@
+module.exports.doctorService = require("./doctor.service");
+module.exports.authService = require("./auth.service");
+module.exports.consultationService = require("./consultation.service");
+module.exports.patientService = require("./patient.service");
+module.exports.livekitService = require("./livekit.service");
+module.exports.aiService = require("./ai.service");
+module.exports.paymentService = require("./payment.service");
+module.exports.adminService = require("./admin.service");
+module.exports.aiConversationService = require("./aiConversation.service");
+module.exports.embeddingService = require("./embedding.service");
+module.exports.medicalEmbeddingService = require("./medicalEmbedding.service");

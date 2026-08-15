@@ -1,0 +1,35 @@
+{
+  "name": "healthbridge",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "start": "turbo start",
+    "build": "turbo build",
+    "preview": "turbo preview",
+    "lint": "run-s --print-label \"lint:*\"",
+    "lint:format": "prettier --color --write '**/*.{js,jsx}'",
+    "lint:backend": "pnpm -F=backend lint",
+    "lint:frontend": "pnpm -F=frontend lint",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "husky": "9.1.7"
+  },
+  "devDependencies": {
+    "eslint": "9.16.0",
+    "lint-staged": "15.2.0",
+    "npm-run-all2": "5.0.0",
+    "prettier": "^3.3.2",
+    "shadcn": "^4.8.3",
+    "turbo": "^2.0.6"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "buffer-equal-constant-time@1.0.1": "patches/buffer-equal-constant-time@1.0.1.patch"
+    }
+  }
+}
